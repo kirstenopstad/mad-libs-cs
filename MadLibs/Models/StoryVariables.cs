@@ -7,5 +7,6 @@ namespace MadLibs.Models
     public string Action { get; set; }
     public string Name { get; set; }
     public string Gettysburg { get; set; }
+    public string InputtedEvent { get; set; }
   }
 }

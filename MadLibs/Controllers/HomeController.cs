@@ -27,11 +27,12 @@ namespace MadLibs.Controllers
     public ActionResult Form2() { return View(); }
 
     [Route("/story2")]
-    public ActionResult Story2(string gettysburg) {
+    public ActionResult Story2(string gettysburg, string inputtedEvent) {
       // takes user inputs as args
       // defines in variable instance
       StoryVariable storyVariable = new StoryVariable();
       storyVariable.Gettysburg = gettysburg;
+      storyVariable.InputtedEvent = inputtedEvent;
       // return View taking instantiated variable as arg
       return View(storyVariable);
     }
